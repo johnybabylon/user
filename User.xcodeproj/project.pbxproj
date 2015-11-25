@@ -14,6 +14,8 @@
 		F4FC44021C05880500EC4292 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4FC44011C05880500EC4292 /* Images.xcassets */; };
 		F4FC44051C05880500EC4292 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4FC44031C05880500EC4292 /* LaunchScreen.xib */; };
 		F4FC44111C05880500EC4292 /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FC44101C05880500EC4292 /* UserTests.m */; };
+		F4FC441F1C058BDF00EC4292 /* ItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FC441E1C058BDF00EC4292 /* ItemsViewController.m */; };
+		F4FC443B1C059A4C00EC4292 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FC443A1C059A4C00EC4292 /* Person.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		F4FC440A1C05880500EC4292 /* UserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FC440F1C05880500EC4292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4FC44101C05880500EC4292 /* UserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		F4FC441D1C058BDF00EC4292 /* ItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemsViewController.h; sourceTree = "<group>"; };
+		F4FC441E1C058BDF00EC4292 /* ItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemsViewController.m; sourceTree = "<group>"; };
+		F4FC44391C059A4C00EC4292 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F4FC443A1C059A4C00EC4292 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				F4FC43F81C05880400EC4292 /* AppDelegate.h */,
+				F4FC44391C059A4C00EC4292 /* Person.h */,
+				F4FC443A1C059A4C00EC4292 /* Person.m */,
+				F4FC441D1C058BDF00EC4292 /* ItemsViewController.h */,
+				F4FC441E1C058BDF00EC4292 /* ItemsViewController.m */,
 				F4FC43F91C05880400EC4292 /* AppDelegate.m */,
 				F4FC43FB1C05880400EC4292 /* ViewController.h */,
 				F4FC43FC1C05880400EC4292 /* ViewController.m */,
@@ -220,6 +230,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4FC43FD1C05880400EC4292 /* ViewController.m in Sources */,
+				F4FC441F1C058BDF00EC4292 /* ItemsViewController.m in Sources */,
+				F4FC443B1C059A4C00EC4292 /* Person.m in Sources */,
 				F4FC43FA1C05880400EC4292 /* AppDelegate.m in Sources */,
 				F4FC43F71C05880400EC4292 /* main.m in Sources */,
 			);

@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "ItemsViewController.h"
+#import "Person.h"
 
 @interface AppDelegate ()
 
@@ -14,9 +16,17 @@
 
 @implementation AppDelegate
 
-
+            
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    ItemsViewController *itemsViewController = [[ItemsViewController alloc] init];
+    
+    self.window.rootViewController = itemsViewController;
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
