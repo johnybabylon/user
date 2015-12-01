@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292436221C059CF6002DACFE /* PersonStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 292436211C059CF6002DACFE /* PersonStore.m */; };
+		29BA183C1C0DCA0800DD9A3D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BA183A1C0DCA0800DD9A3D /* DetailViewController.m */; };
+		29BA183D1C0DCA0800DD9A3D /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29BA183B1C0DCA0800DD9A3D /* DetailViewController.xib */; };
 		F4FC43F71C05880400EC4292 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FC43F61C05880400EC4292 /* main.m */; };
 		F4FC43FA1C05880400EC4292 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FC43F91C05880400EC4292 /* AppDelegate.m */; };
 		F4FC43FD1C05880400EC4292 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FC43FC1C05880400EC4292 /* ViewController.m */; };
@@ -29,6 +32,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		292436201C059CF6002DACFE /* PersonStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonStore.h; sourceTree = "<group>"; };
+		292436211C059CF6002DACFE /* PersonStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonStore.m; sourceTree = "<group>"; };
+		29BA18391C0DCA0800DD9A3D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		29BA183A1C0DCA0800DD9A3D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		29BA183B1C0DCA0800DD9A3D /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		F4FC43F11C05880400EC4292 /* User.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = User.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4FC43F51C05880400EC4292 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4FC43F61C05880400EC4292 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,12 +95,17 @@
 		F4FC43F31C05880400EC4292 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				F4FC43F91C05880400EC4292 /* AppDelegate.m */,
+				29BA18391C0DCA0800DD9A3D /* DetailViewController.h */,
+				29BA183A1C0DCA0800DD9A3D /* DetailViewController.m */,
+				29BA183B1C0DCA0800DD9A3D /* DetailViewController.xib */,
 				F4FC43F81C05880400EC4292 /* AppDelegate.h */,
 				F4FC44391C059A4C00EC4292 /* Person.h */,
 				F4FC443A1C059A4C00EC4292 /* Person.m */,
+				292436201C059CF6002DACFE /* PersonStore.h */,
+				292436211C059CF6002DACFE /* PersonStore.m */,
 				F4FC441D1C058BDF00EC4292 /* ItemsViewController.h */,
 				F4FC441E1C058BDF00EC4292 /* ItemsViewController.m */,
-				F4FC43F91C05880400EC4292 /* AppDelegate.m */,
 				F4FC43FB1C05880400EC4292 /* ViewController.h */,
 				F4FC43FC1C05880400EC4292 /* ViewController.m */,
 				F4FC43FE1C05880500EC4292 /* Main.storyboard */,
@@ -211,6 +224,7 @@
 			files = (
 				F4FC44001C05880500EC4292 /* Main.storyboard in Resources */,
 				F4FC44051C05880500EC4292 /* LaunchScreen.xib in Resources */,
+				29BA183D1C0DCA0800DD9A3D /* DetailViewController.xib in Resources */,
 				F4FC44021C05880500EC4292 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,11 +243,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				292436221C059CF6002DACFE /* PersonStore.m in Sources */,
 				F4FC43FD1C05880400EC4292 /* ViewController.m in Sources */,
 				F4FC441F1C058BDF00EC4292 /* ItemsViewController.m in Sources */,
 				F4FC443B1C059A4C00EC4292 /* Person.m in Sources */,
 				F4FC43FA1C05880400EC4292 /* AppDelegate.m in Sources */,
 				F4FC43F71C05880400EC4292 /* main.m in Sources */,
+				29BA183C1C0DCA0800DD9A3D /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,8 +378,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = User/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -372,8 +390,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = User/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -430,6 +450,7 @@
 				F4FC44161C05880500EC4292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4FC44171C05880500EC4292 /* Build configuration list for PBXNativeTarget "UserTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +459,7 @@
 				F4FC44191C05880500EC4292 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
